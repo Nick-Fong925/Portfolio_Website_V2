@@ -33,7 +33,10 @@ html {
 }
         `}</style>
         <meta name="author" content="Nicholas Fong" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="theme-color" content="#18181b" />
+        <link rel="icon" href="/rocket-favicon.ico" />
+        <title>Nicholas Fong | Portfolio 🚀</title>
+        <meta name="description" content="Modern developer portfolio showcasing projects and experience." />
       </head>
       <body className="antialiased">{children}</body>
     </html>

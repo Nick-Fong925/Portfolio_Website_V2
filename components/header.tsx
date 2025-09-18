@@ -67,25 +67,25 @@ export function Header() {
           <div className="hidden md:flex items-center space-x-6 sm:space-x-8">
             <button
               onClick={() => scrollToSection("about")}
-              className="text-foreground hover:text-accent transition-colors"
+              className="text-foreground hover:text-accent transition-colors font-bold"
             >
               About
             </button>
             <button
-              onClick={() => scrollToSection("projects")}
-              className="text-foreground hover:text-accent transition-colors"
-            >
-              Projects
-            </button>
-            <button
               onClick={() => scrollToSection("experience")}
-              className="text-foreground hover:text-accent transition-colors"
+              className="text-foreground hover:text-accent transition-colors font-bold"
             >
               Experience
             </button>
             <button
+              onClick={() => scrollToSection("projects")}
+              className="text-foreground hover:text-accent transition-colors font-bold"
+            >
+              Projects
+            </button>
+            <button
               onClick={() => scrollToSection("contact")}
-              className="text-foreground hover:text-accent transition-colors"
+              className="text-foreground hover:text-accent transition-colors font-bold"
             >
               Contact
             </button>
@@ -130,25 +130,25 @@ export function Header() {
             <div className="flex flex-col space-y-6 w-full max-w-xs mx-auto">
               <button
                 onClick={() => scrollToSection("about")}
-                className="w-full text-center text-lg font-medium text-foreground hover:text-accent transition-colors py-3 rounded"
+                className="w-full text-center text-lg font-bold text-foreground hover:text-accent transition-colors py-3 rounded"
               >
                 About
               </button>
               <button
-                onClick={() => scrollToSection("projects")}
-                className="w-full text-center text-lg font-medium text-foreground hover:text-accent transition-colors py-3 rounded"
-              >
-                Projects
-              </button>
-              <button
                 onClick={() => scrollToSection("experience")}
-                className="w-full text-center text-lg font-medium text-foreground hover:text-accent transition-colors py-3 rounded"
+                className="w-full text-center text-lg font-bold text-foreground hover:text-accent transition-colors py-3 rounded"
               >
                 Experience
               </button>
               <button
+                onClick={() => scrollToSection("projects")}
+                className="w-full text-center text-lg font-bold text-foreground hover:text-accent transition-colors py-3 rounded"
+              >
+                Projects
+              </button>
+              <button
                 onClick={() => scrollToSection("contact")}
-                className="w-full text-center text-lg font-medium text-foreground hover:text-accent transition-colors py-3 rounded"
+                className="w-full text-center text-lg font-bold text-foreground hover:text-accent transition-colors py-3 rounded"
               >
                 Contact
               </button>

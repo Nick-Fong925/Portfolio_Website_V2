@@ -39,7 +39,7 @@ const experiences = [
 		title: "QA Automation Engineer Co-op",
 		company: "Royal Bank of Canada - Global Asset Management",
 		location: "Vancouver, BC",
-		period: "Janurary 2025 - August 2025",
+		period: "January 2025 - August 2025",
 		description:
 			"Led test automation initiatives and framework development to enhance software quality and team productivity across multiple technology stacks.",
 		achievements: [

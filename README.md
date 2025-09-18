@@ -1,36 +1,49 @@
-# Portfolio - Nicholas Fong
+# Nicholas Fong – Portfolio Website
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Welcome to my personal portfolio! This site showcases my professional experience, featured projects, and technical skills in a modern, responsive, and interactive format.
 
-## Getting Started
+## 🚀 Tech Stack
 
-First, run the development server:
+- **Next.js** (App Router)
+- **React** (Functional Components & Hooks)
+- **TypeScript**
+- **Tailwind CSS** (Custom theming & utility-first styling)
+- **Lucide Icons**
+- **Custom UI Components**
+
+## ✨ Features
+
+- Fully responsive design for mobile, tablet, and desktop
+- Animated experience modal for engaging UX
+- Dynamic project and experience sections
+- Custom smooth scrolling navigation
+- Downloadable resume and direct contact links
+- Clean, accessible, and modern UI
+
+## 🧩 Challenges & Solutions
+
+- **Mobile Responsiveness:** Special attention to centering, spacing, and sizing for all devices, ensuring a seamless experience on phones and tablets.
+- **Animated Modals:** Implemented smooth transitions for popups to enhance user engagement.
+- **Scalable Architecture:** Modular React components and clear separation of concerns for easy maintenance and future growth.
+- **Performance:** Optimized images, lazy loading, and minimal bundle size for fast load times.
+
+## 📝 Getting Started
+
+Clone the repo and run locally:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📫 Contact
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load custom fonts.
+- [LinkedIn](https://www.linkedin.com/in/nicholas-fong-1425b8221/)
+- [GitHub](https://github.com/Nick-Fong925)
+- Email: nicholasfong1120@gmail.com
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy
-
-You can deploy this app to your preferred platform. See the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Thank you for visiting my portfolio! If you’re a recruiter or collaborator, I’d love to connect and discuss new opportunities.

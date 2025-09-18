@@ -4,7 +4,6 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated color tokens to match black/purple portfolio design */
   --background: oklch(0.05 0 0);
   --foreground: oklch(0.98 0 0);
   --card: oklch(0.08 0 0);
@@ -16,7 +15,7 @@
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.15 0 0);
   --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.45 0 0);
+  --muted-foreground: oklch(0.97 0 0);
   --accent: oklch(0.55 0.15 300);
   --accent-foreground: oklch(0.98 0 0);
   --destructive: oklch(0.577 0.245 27.325);
@@ -53,7 +52,7 @@
   --secondary: oklch(0.15 0 0);
   --secondary-foreground: oklch(0.98 0 0);
   --muted: oklch(0.15 0 0);
-  --muted-foreground: oklch(0.65 0 0);
+  --muted-foreground: oklch(0.97 0 0);;
   --accent: oklch(0.55 0.15 300);
   --accent-foreground: oklch(0.98 0 0);
   --destructive: oklch(0.396 0.141 25.723);

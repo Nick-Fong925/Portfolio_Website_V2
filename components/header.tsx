@@ -57,12 +57,14 @@ export function Header() {
           : "bg-transparent"
       }`}
     >
-      <nav className="container mx-auto px-4 sm:px-6 py-4">
-        <div className="flex items-center justify-between">
-          <div className="text-xl font-bold">Nicholas Fong</div>
+      <nav className="w-full px-2 sm:px-4 md:px-6 py-3 sm:py-4 max-w-full">
+        <div className="flex items-center justify-between w-full max-w-full overflow-x-auto">
+          <div className="text-lg sm:text-xl font-bold whitespace-nowrap">
+            Nicholas Fong
+          </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6 sm:space-x-8">
             <button
               onClick={() => scrollToSection("about")}
               className="text-foreground hover:text-accent transition-colors"
@@ -89,17 +91,17 @@ export function Header() {
             </button>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
             <Button
               onClick={() => scrollToSection("contact")}
-              className="bg-accent hover:bg-accent/90 text-accent-foreground hidden sm:inline-flex"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground hidden sm:inline-flex px-3 sm:px-5 text-sm sm:text-base"
             >
               Get In Touch
             </Button>
             <Button
               onClick={() => scrollToSection("contact")}
               size="sm"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground sm:hidden"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground sm:hidden px-3 text-sm"
             >
               Contact
             </Button>
@@ -117,31 +119,36 @@ export function Header() {
             </button>
           </div>
         </div>
-
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-border">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden fixed top-0 left-0 w-full h-full bg-background/95 z-[100] flex flex-col items-center pt-24 px-4">
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="absolute top-4 right-4 p-2 bg-secondary rounded-lg transition-colors z-[101]"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <div className="flex flex-col space-y-6 w-full max-w-xs mx-auto">
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-left text-foreground hover:text-accent transition-colors py-2"
+                className="w-full text-center text-lg font-medium text-foreground hover:text-accent transition-colors py-3 rounded"
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection("projects")}
-                className="text-left text-foreground hover:text-accent transition-colors py-2"
+                className="w-full text-center text-lg font-medium text-foreground hover:text-accent transition-colors py-3 rounded"
               >
                 Projects
               </button>
               <button
                 onClick={() => scrollToSection("experience")}
-                className="text-left text-foreground hover:text-accent transition-colors py-2"
+                className="w-full text-center text-lg font-medium text-foreground hover:text-accent transition-colors py-3 rounded"
               >
                 Experience
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-left text-foreground hover:text-accent transition-colors py-2"
+                className="w-full text-center text-lg font-medium text-foreground hover:text-accent transition-colors py-3 rounded"
               >
                 Contact
               </button>

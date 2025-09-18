@@ -1,27 +1,27 @@
 import { Card } from "@/components/ui/card";
-import { Code, Palette, Zap, Rocket } from "lucide-react";
+import { Code, Zap, Rocket } from "lucide-react";
 
 export function AboutSection() {
   return (
     <section id="about" className="py-20 pt-32 bg-secondary/20 z-10">
-      <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
+      <div className="container mx-auto px-4 flex flex-col items-center">
+        <div className="max-w-4xl w-full mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <p className="text-lg text-muted-foreground mb-6">
-                I'm a fifth-year Business and Computer Science student at UBC
+            <div className="text-center md:text-left flex flex-col items-center md:items-start">
+              <p className="text-lg text-muted-foreground mb-6 text-center md:text-left">
+                I&apos;m a fifth-year Business and Computer Science student at UBC
                 who believes the best engineers are built through diverse
                 experiences, not just code. Currently tackling data engineering
-                challenges @ RBC, I've previously worn multiple hats, from QA
+                challenges @ RBC, I&apos;ve previously worn multiple hats, from QA
                 automation engineer to software engineer @ Binggrae, each role
                 adding new tools to my problem-solving arsenal.
               </p>
-              <p className="text-lg text-muted-foreground mb-6">
+              <p className="text-lg text-muted-foreground mb-6 text-center md:text-left">
                 Ready to bring fresh perspectives and hungry curiosity to your
                 next challenge.
               </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {[
                   "React",
                   "Next.js",
@@ -33,6 +33,12 @@ export function AboutSection() {
                   "Playwright",
                   "CI/CD",
                   "Java",
+                  "Kubernetes",
+                  "Go",
+                  "Docker",
+                  "Airflow",
+                  "GraphQL",
+                  "PySpark"
                 ].map((tech) => (
                   <span
                     key={tech}
@@ -43,7 +49,7 @@ export function AboutSection() {
                 ))}
               </div>
             </div>
-            <div className="relative">
+            <div className="relative flex justify-center">
               <img
                 src="/resources/headshot/nicholas_fong_headshot.webp"
                 alt="Profile"

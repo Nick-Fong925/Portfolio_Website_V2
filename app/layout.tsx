@@ -5,9 +5,16 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Portfolio - Your Name",
-  description: "Modern developer portfolio showcasing projects and experience",
-  generator: "v0.app",
+  title: "Nicholas Fong | Portfolio",
+  description: "Modern developer portfolio showcasing projects and experience.",
+  authors: [{ name: "Nicholas Fong" }],
+  openGraph: {
+    title: "Nicholas Fong | Portfolio",
+    description: "Modern developer portfolio showcasing projects and experience.",
+    url: "https://nicholasfong.com", // Update to your custom domain if available
+    siteName: "Nicholas Fong Portfolio",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -25,6 +32,8 @@ html {
   --font-mono: ${GeistMono.variable};
 }
         `}</style>
+        <meta name="author" content="Nicholas Fong" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className="antialiased">{children}</body>
     </html>

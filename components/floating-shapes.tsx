@@ -38,7 +38,7 @@ export function FloatingShapes() {
 
     const createShapes = () => {
       const shapes: Shape[] = [];
-      const shapeCount = Math.floor(window.innerWidth / 200); // Responsive shape count
+      const shapeCount = Math.floor(window.innerWidth / 45);
 
       for (let i = 0; i < shapeCount; i++) {
         shapes.push({

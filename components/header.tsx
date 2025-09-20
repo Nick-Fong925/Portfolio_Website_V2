@@ -83,12 +83,6 @@ export function Header() {
             >
               Projects
             </button>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-foreground hover:text-accent transition-colors font-bold"
-            >
-              Contact
-            </button>
           </div>
 
           <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">

@@ -4,6 +4,14 @@ import { Github } from "lucide-react";
 
 const projects = [
 	{
+		title: "Narrify",
+		description:
+			"Narrify is an automated platform that scrapes compelling Reddit stories and transforms them into ready-to-upload YouTube Shorts with AI-generated voiceovers and background visuals.",
+		image: "/resources/project_logo/reddit.png",
+		tech: ["Next.js", "FastAPI", "SQLite", "OpenAI TTS API", "TypeScript"],
+		github: "https://github.com/Nick-Fong925/Narrify",
+	},
+	{
 		title: "Daily Boost",
 		description:
 			"An innovative mobile app designed to motivate individuals to embrace an active and healthy lifestyle by leveraging the power of social media and community building.",

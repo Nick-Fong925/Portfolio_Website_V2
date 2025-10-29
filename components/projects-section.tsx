@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github } from "lucide-react";
+import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
 	{
@@ -10,6 +10,7 @@ const projects = [
 		image: "/resources/project_logo/reddit.png",
 		tech: ["Next.js", "FastAPI", "SQLite", "OpenAI TTS API", "TypeScript"],
 		github: "https://github.com/Nick-Fong925/Narrify",
+		demo: "https://www.youtube.com/@DoomScrollStories101"
 	},
 	{
 		title: "Daily Boost",
@@ -93,11 +94,22 @@ export function ProjectsSection() {
 												Code
 											</a>
 										</Button>
-										<Button
-											size="sm"
-											className="bg-accent hover:bg-accent/90"
-											asChild
-										></Button>
+										{project.demo && (
+											<Button
+												size="sm"
+												className="bg-accent hover:bg-accent/90"
+												asChild
+											>
+												<a
+													href={project.demo}
+													target="_blank"
+													rel="noopener noreferrer"
+												>
+													<ExternalLink className="w-4 h-4 mr-2" />
+													Demo
+												</a>
+											</Button>
+										)}
 									</div>
 								</div>
 							</Card>
